@@ -69,7 +69,7 @@ as an argument and extracts detailed information about that phone from its indiv
 
 def parse_cell_phones(cell_phone_id):
 
-    global critical_errors ## I indicate that 'serious_errors' is a global variable
+    global critical_errors ## I indicate that 'critical_errors' is a global variable
     
     url = f'https://tienda.personal.com.ar{cell_phone_id}'
     #print('Dirección: ', url)
@@ -153,6 +153,8 @@ def parse_cell_phones(cell_phone_id):
             except:
                 pass
     
+    personal_cell_phones['company'] = 'Personal'
+    
     personal_cell_phones['model'] = model
     
     personal_cell_phones['price'] = price
@@ -196,7 +198,7 @@ df_personal_cell_phones.to_csv('celulares_personal.csv', index = False)
 
 print('Number of records obtained: ', len(df_personal_cell_phones))
 
-print('Number of serious errors found: ', critical_errors)
+print('Number of critical errors found: ', critical_errors)
 
 print('Number of null data found: ',df_personal_cell_phones.iloc[:,:7].isnull().sum().sum())
 

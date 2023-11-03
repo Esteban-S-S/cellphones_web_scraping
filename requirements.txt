@@ -1,4 +1,5 @@
-anyio==4.0.0
+annotated-types==0.6.0
+anyio==3.7.1
 argon2-cffi==23.1.0
 argon2-cffi-bindings==21.2.0
 arrow==1.3.0
@@ -11,12 +12,14 @@ bleach==6.1.0
 certifi==2023.7.22
 cffi==1.16.0
 charset-normalizer==3.3.1
+click==8.1.7
 comm==0.1.4
 debugpy==1.8.0
 decorator==5.1.1
 defusedxml==0.7.1
 exceptiongroup==1.1.3
 executing==2.0.1
+fastapi==0.104.1
 fastjsonschema==2.18.1
 fqdn==1.5.1
 h11==0.14.0
@@ -69,6 +72,8 @@ psutil==5.9.6
 ptyprocess==0.7.0
 pure-eval==0.2.2
 pycparser==2.21
+pydantic==2.4.2
+pydantic_core==2.10.1
 Pygments==2.16.1
 PySocks==1.7.1
 python-dateutil==2.8.2
@@ -90,6 +95,7 @@ sniffio==1.3.0
 sortedcontainers==2.4.0
 soupsieve==2.5
 stack-data==0.6.3
+starlette==0.27.0
 terminado==0.17.1
 tinycss2==1.2.1
 tomli==2.0.1
@@ -103,6 +109,7 @@ tzdata==2023.3
 undetected-chromedriver==3.5.3
 uri-template==1.3.0
 urllib3==2.0.7
+uvicorn==0.23.2
 wcwidth==0.2.9
 webcolors==1.13
 webencodings==0.5.1
